@@ -2,12 +2,14 @@ const { Pool } = require('pg')
 require('dotenv').config()
 
 // OUTPUT dotenv config details
+/*
 console.log(process.env.NODE_ENV)
 console.log(process.env.HOST)
 console.log(process.env.DB_PORT)
 console.log(process.env.DB_USER)
 console.log(process.env.DB_PASSWORD)
 console.log(process.env.DATABASE)
+*/
 
 if (process.env.NODE_ENV === 'local') {
   const pool = new Pool({
